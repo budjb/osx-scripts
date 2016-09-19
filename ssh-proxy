@@ -20,4 +20,4 @@ fi
 PROXY_HOST=$1
 REMOTE_CMD="${@:2}"
 
-ssh -o ProxyCommand="ssh -A $PROXY_HOST \"nc %h %p\"" $REMOTE_CMD
+ssh -o ProxyCommand="ssh $PROXY_HOST \"nc %h %p\"" $REMOTE_CMD
