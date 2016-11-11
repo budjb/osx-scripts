@@ -2,11 +2,13 @@
 
 function print_help() {
     echo ""
-    echo "Usage: $SCRIPT_NAME proxy-host remote-host [options]"
+    echo "Usage: $SCRIPT_NAME proxy-host [options] [user@]hostname [command]"
     echo ""
     echo "    proxy-host    Hostname or IP address of the host to proxy through."
-    echo "    remote-host   Hostname or IP address of the remote host to connect through the proxy to."
     echo "    options       Any additional options to pass to the SSH command."
+    echo "    user          User to authenticate to the remote host with."
+    echo "    hostname      Hostname or IP address of the remote host to connect through the proxy to."
+    echo "    command       Optional command to run on the remote host."
     echo ""
 }
 
